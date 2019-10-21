@@ -9,8 +9,6 @@ public class Attributes {
     public Field(String name, int points, String extra){
         System.out.println("You landed on " + name + " Which is " + points + " points" );
 
-        //test comment by Sander for Sander
-        //second test
 
     }
 
