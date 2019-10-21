@@ -10,6 +10,7 @@ public class Attributes {
         System.out.println("You landed on " + name + " Which is " + points + " points" );
 
         //test comment by Sander for Sander
+        //second test
 
     }
 
