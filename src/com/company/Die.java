@@ -15,13 +15,6 @@ public class Die {
 
     public int GetFacevalue() {
         return Die1 + Die2;
-    }
-    public static void main(String[]args){
-        Die obj = new Die();
-        for(int i = 0; i < 10; i++){
-            obj.Roll();
-            System.out.println(obj.GetFacevalue());
+                    }
         }
 
-    }
-}

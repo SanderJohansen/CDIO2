@@ -4,6 +4,7 @@ public class Game {
 
 static Wallet Show = new Wallet();
 static Diceroller Rolled = new Diceroller();
+
     public static void CallGame() {
         while (Show.GetWalletPlayer1() <= 3000 && Show.GetWalletPlayer2() <= 3000) {
             switch (Rolled.face_sum()) {
