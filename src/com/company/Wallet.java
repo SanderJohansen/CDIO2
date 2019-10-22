@@ -20,9 +20,13 @@ public class Wallet {
 
     public static void setWallet1(int Modifier) {
         Wallet1 += Modifier;
+        if(Wallet1 < 0)
+            Wallet1 = 0;
     }
 
     public static void setWallet2(int modifier) {
         Wallet2 += modifier;
+        if(Wallet2 < 0)
+            Wallet2 = 0;
     }
 }
