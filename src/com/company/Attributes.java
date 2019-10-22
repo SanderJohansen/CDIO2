@@ -1,20 +1,29 @@
 package com.company;
 
-public class Attributes {
+import java.util.Scanner;
 
-    String name;
-    int points;
-    String extra;
-
-    public Field(String name, int points, String extra){
-        System.out.println("You landed on " + name + " Which is " + points + " points" );
+public class Attributes extends Diceroller{
 
 
+
+
+
+
+
+
+    public String Rules(String T) {
+        Scanner Myscan = new Scanner(System.in);
+        String Playerinput = Myscan.nextLine();
+
+
+        if (Playerinput == "Rules") {
+            System.out.println();
+
+
+
+        }
     }
 
-
-
-    public rules
 }
 
 
