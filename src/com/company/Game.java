@@ -5,8 +5,9 @@ public class Game {
 static Wallet Show = new Wallet();
 static Diceroller Rolled = new Diceroller();
 
+
     public static void CallGame() {
-        while (Show.GetWalletPlayer1() <= 3000 && Show.GetWalletPlayer2() <= 3000) {
+        while (Show.GetWalletPlayer1(0) <= 3000 && Show.GetWalletPlayer2(0) <= 3000) {
             switch (Rolled.face_sum()) {
                 case 2:
                     System.out.println();
@@ -15,7 +16,7 @@ static Diceroller Rolled = new Diceroller();
                 case 3:
                     System.out.println();
                     System.out.println("You fall into a crater, and lose 100 gold coins duing the fall");
-                    int modiferer
+                    System.out.println(Show.GetWalletPlayer1(250));
                     break;
                 case 4:
                     System.out.println("");
@@ -63,5 +64,5 @@ static Diceroller Rolled = new Diceroller();
     }
 
 
-}
+
 
