@@ -1,5 +1,5 @@
 package com.company;
-
+/*
 public class Game {
 
     public static void CallGame() {
@@ -58,3 +58,5 @@ public class Game {
 
     }
 
+
+    */
