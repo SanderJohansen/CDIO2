@@ -17,10 +17,26 @@ public class Main {
 
         System.out.println("Welcome " + player1 + " and " + player2);
 
+        System.out.println("Do you want the rules of the game, or do you want to start the game?");
+        System.out.println("Type rules for rules, and start to start");
+
+
+        String Start_function = scan.nextLine();
+
+        if(Start_function == "Rules"){
+            Rules();
+
+
+
+        }
+
 
 
 
 
 
     }
-}
+
+
+    }
+
