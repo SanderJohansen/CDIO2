@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 
 
-public class Main extends Attributes{
-
+public class Main{
+    private static rules attributes = new rules();
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -18,15 +18,26 @@ public class Main extends Attributes{
 
         System.out.println("Welcome " + player1 + " and " + player2);
 
-        System.out.println("Do you want the rules of the game, or do you want to start the game?");
-        System.out.println("Type Rules for rules, and Start to start");
+        while(0 == 0){
+            System.out.println("----------------------------------");
+            System.out.println("Do you want to start the game, or you want the rules of the game?");
+            System.out.println("Type 1 to start, and type 2 for rules");
+            int Start_function = scan.nextInt();
+
+            if (Start_function == 2) {
+                attributes.Rules();
+
+            }
+            if (Start_function == 1){
+                System.out.println("Its " + player1 + "´s turn");
+                break;
+            }
 
 
-        String Start_function = scan.nextLine();
 
 
-        if(Start_function == "Rules"){
-            Rules();
+
+
 
         }
 
