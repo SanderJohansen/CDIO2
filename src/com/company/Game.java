@@ -1,10 +1,12 @@
 package com.company;
-/*
+
 public class Game {
 
+static Wallet Show = new Wallet();
+static Diceroller Rolled = new Diceroller();
     public static void CallGame() {
-        while (getWallet1() <= 3000 && getWallet2() <= 3000) {
-            switch (face_sum()) {
+        while (Show.GetWalletPlayer1() <= 3000 && Show.GetWalletPlayer2() <= 3000) {
+            switch (Rolled.face_sum()) {
                 case 2:
                     System.out.println();
                     System.out.println("You walk into a tower, and find a pouch with 250 gold in it!");
@@ -12,6 +14,7 @@ public class Game {
                 case 3:
                     System.out.println();
                     System.out.println("You fall into a crater, and lose 100 gold coins duing the fall");
+                    int modiferer
                     break;
                 case 4:
                     System.out.println("");
@@ -59,4 +62,5 @@ public class Game {
     }
 
 
-    */
+}
+

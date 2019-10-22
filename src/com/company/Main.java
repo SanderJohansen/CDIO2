@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 
 public class Main{
-    private static rules attributes = new rules();
+    static Rules Give = new Rules();
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -25,7 +25,7 @@ public class Main{
             int Start_function = scan.nextInt();
 
             if (Start_function == 2) {
-                attributes.Rules();
+                Give.rules();
 
             }
             if (Start_function == 1){
