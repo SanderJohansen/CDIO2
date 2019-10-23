@@ -1,10 +1,11 @@
 package com.company;
-
+/*
 public class Gameboard {
 
     static Wallet Show = new Wallet();
     static Diceroller Rolled = new Diceroller();
     static Intro_to_game Names = new Intro_to_game();
+
 
 
     public static void CallGame() {
@@ -138,6 +139,6 @@ public class Gameboard {
     }
 }
 
-
+*/
 
 

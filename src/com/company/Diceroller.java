@@ -7,8 +7,11 @@ public class Diceroller {
         obj.Roll();
     }
 
-    public int face_sum(){
+    public void Roll(){
         obj.Roll();
+    }
+
+    public int face_sum(){
         return obj.GetFacevalue();
     }
 }

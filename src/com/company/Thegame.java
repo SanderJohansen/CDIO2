@@ -3,7 +3,7 @@ package com.company;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
-
+/*
 
 public class Thegame{
     static Rules Give = new Rules();
@@ -26,4 +26,4 @@ public class Thegame{
 
 
     }
-
+*/
