@@ -5,15 +5,12 @@ import java.util.Scanner;
 
 public class Intro_to_game {
     static Rules Give = new Rules();
+    static Scanner scan = new Scanner(System.in);
 
+    public Intro_to_game(){
+    }
 
-    public void Intro() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("What is player 1´s name?");
-        String Player1 = scan.nextLine();
-        System.out.println("What is player 2´s name?");
-        String Player2 = scan.nextLine();
-
+    public void Intro(String Player1, String Player2) {
 
         System.out.println("Welcome " + Player1 + " and " + Player2);
         while (0 == 0) {
@@ -31,7 +28,6 @@ public class Intro_to_game {
                 break;
             }
         }
-
 
     }
 }

@@ -2,16 +2,16 @@ package com.company;
 
 public class Board {
 
-    public Board(){
+    public Board() {
     }
 
-    public void text(int square){
-        switch(square){
+    public void text(int square) {
+        switch (square) {
             case 2: {
                 System.out.println("You walk into a tower, and find a pouch with 250 gold in it!");
                 break;
             }
-            case 3:{
+            case 3: {
                 System.out.println("You fall into a crater, and lose 100 gold coins duing the fall");
                 break;
             }
@@ -52,5 +52,67 @@ public class Board {
                 break;
             }
         }
+    }
+
+    public int points(int square) {
+        int a = 0;
+        switch (square) {
+            case 2:
+                a = 250;
+                break;
+            case 3:
+                a = -100;
+                break;
+            case 4:
+                a = 100;
+                break;
+            case 5:
+                a = -20;
+                break;
+            case 6:
+                a = 180;
+                break;
+            case 7:
+                a = 0;
+                break;
+            case 8:
+                a = -70;
+                break;
+            case 9:
+                a = 60;
+                break;
+            case 10:
+                a = -80;
+                break;
+            case 11:
+                a = -50;
+                break;
+            case 12:
+                a = 650;
+                break;
+        }
+        return a;
+    }
+
+    public int turneffect(int square){
+        int a = 0;
+
+        switch (square){
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 11:
+            case 12:
+                a++;
+                break;
+            case 10:
+                break;
+        }
+        return a;
     }
 }
