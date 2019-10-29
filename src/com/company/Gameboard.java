@@ -3,11 +3,10 @@ package com.company;
 import java.util.Scanner;
 
 public class Gameboard {
-
-    static Diceroller Rolled = new Diceroller();
-    static Scanner scan = new Scanner(System.in);
-    static Intro_to_game Rules = new Intro_to_game();
-    static Board field = new Board();
+    private Diceroller Rolled = new Diceroller();
+    private Scanner scan = new Scanner(System.in);
+    private Intro_to_game Rules = new Intro_to_game();
+    private Board field = new Board();
 
     public void CallGame() {
         System.out.println("What is player 1´s name?");
@@ -50,6 +49,3 @@ public class Gameboard {
         }
     }
 }
-
-
-

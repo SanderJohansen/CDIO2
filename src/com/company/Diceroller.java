@@ -1,8 +1,8 @@
 package com.company;
 
 public class Diceroller {
-    Die Die1 = new Die();
-    Die Die2 = new Die();
+    private Die Die1 = new Die();
+    private Die Die2 = new Die();
 
     public Diceroller() {
     }

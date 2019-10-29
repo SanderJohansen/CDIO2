@@ -2,8 +2,8 @@ package com.company;
 import java.util.Scanner;
 
 public class Player {
-    public String playername;
-    Wallet Playerwallet = new Wallet();
+    private String playername;
+    private Wallet Playerwallet = new Wallet();
 
     public Player(String name){
         playername = name;
