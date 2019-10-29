@@ -13,7 +13,11 @@ public class Player {
         return playername;
     }
 
-    public int getwallet(int modifier){
-        return Playerwallet.GetWallet(modifier);
+    public int getwallet(){
+        return Playerwallet.GetWallet();
+    }
+
+    public void setwallet(int modifier){
+        Playerwallet.SetWallet(modifier);
     }
 }

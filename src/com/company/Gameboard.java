@@ -19,7 +19,7 @@ public class Gameboard {
         System.out.println("----------------------------------------------");
 
         int i = 0;
-        while (Player1.getwallet(0) <= 3000 && Player2.getwallet(0) <= 3000) {
+        while (Player1.getwallet() <= 3000 && Player2.getwallet() <= 3000) {
             if(i%2==0) {
                 System.out.println("It´s " + Player1.getname() +"´s turn, press enter to roll");
             }
@@ -30,19 +30,23 @@ public class Gameboard {
 
             Rolled.Roll();
             System.out.println("you rolled, " + Rolled.face_sum());
+
             field.text(Rolled.face_sum());
-            if(i % 2 == 0)
-                System.out.println("your new balance is, " + Player1.getwallet(field.points(Rolled.face_sum())));
-            else
-                System.out.println("your new balance is, " + Player2.getwallet(field.points(Rolled.face_sum())));
+            if(i % 2 == 0) {
+                Player1.setwallet(field.points(Rolled.face_sum()));
+                System.out.println("your new balance is, " + Player1.getwallet());
+            } else {
+                Player2.setwallet(field.points(Rolled.face_sum()));
+                System.out.println("your new balance is, " + Player2.getwallet());
+            }
             i += field.turneffect(Rolled.face_sum());
             System.out.println("----------------------------------------------");
         }
-        if (Player1.getwallet(0) > 3000){
-            System.out.println(Player1.getname() + " wins with, " + Player1.getwallet(0) + " points");
+        if (Player1.getwallet() > 3000){
+            System.out.println(Player1.getname() + " wins with, " + Player1.getwallet() + " points");
         }
-        if (Player2.getwallet(0) > 3000){
-            System.out.println(Player2.getname() + " wins with, " + Player2.getwallet(0) + " points");
+        if (Player2.getwallet() > 3000){
+            System.out.println(Player2.getname() + " wins with, " + Player2.getwallet() + " points");
         }
     }
 }

@@ -4,10 +4,13 @@ public class Wallet {
 
     private int Wallet = 1000;
 
-    public int GetWallet(int Modifier) {
-        Wallet += Modifier;
-        if (Wallet < 0)
-            Wallet = 0;
+    public int GetWallet() {
         return Wallet;
+    }
+
+    public void SetWallet(int modifier){
+        Wallet += modifier;
+        if(Wallet < 0)
+            Wallet = 0;
     }
 }
