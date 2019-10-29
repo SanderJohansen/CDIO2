@@ -33,10 +33,10 @@ public class Gameboard {
 
             field.text(Rolled.face_sum());
             if(i % 2 == 0) {
-                Player1.setwallet(field.points(Rolled.face_sum()));
+                System.out.print("you " + Player1.setwallet(field.points(Rolled.face_sum())) + " your wallet, ");
                 System.out.println("your new balance is, " + Player1.getwallet());
             } else {
-                Player2.setwallet(field.points(Rolled.face_sum()));
+                System.out.print("you " + Player2.setwallet(field.points(Rolled.face_sum())) + " your wallet, ");
                 System.out.println("your new balance is, " + Player2.getwallet());
             }
             i += field.turneffect(Rolled.face_sum());

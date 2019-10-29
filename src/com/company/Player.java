@@ -17,7 +17,7 @@ public class Player {
         return Playerwallet.GetWallet();
     }
 
-    public void setwallet(int modifier){
-        Playerwallet.SetWallet(modifier);
+    public String setwallet(int modifier){
+        return Playerwallet.SetWallet(modifier);
     }
 }

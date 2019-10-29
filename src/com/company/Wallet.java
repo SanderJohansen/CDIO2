@@ -8,9 +8,20 @@ public class Wallet {
         return Wallet;
     }
 
-    public void SetWallet(int modifier){
-        Wallet += modifier;
-        if(Wallet < 0)
-            Wallet = 0;
+    public String SetWallet(int modifier){
+        String a;
+        if(modifier < 0) {
+            if((Wallet + modifier) < 0){
+                a = "remove " + Integer.toString(Wallet) + " from";
+                Wallet = 0;
+            } else {
+                a = "remove " + Integer.toString((-modifier)) + " from";
+                Wallet += modifier;
+            }
+        } else {
+            a = "add " + Integer.toString(modifier) + " to";
+            Wallet += modifier;
+        }
+        return a;
     }
 }
