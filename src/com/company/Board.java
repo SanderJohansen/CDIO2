@@ -12,11 +12,11 @@ public class Board {
                 break;
             }
             case 3: {
-                System.out.println("You fall into a crater, and lose 100 gold coins duing the fall");
+                System.out.println("You fall into a crater, and lose 100 gold coins during the fall");
                 break;
             }
             case 4: {
-                System.out.println("You arrive at the palace gates, ....... You earn 100 golden coins");
+                System.out.println("You arrive at the palace gates. They are very kind and you earn 100 golden coins");
                 break;
             }
             case 5: {
@@ -24,15 +24,15 @@ public class Board {
                 break;
             }
             case 6: {
-                System.out.println("You arrive at a walled city, ..... You get 180 coins");
+                System.out.println("You arrive at a walled city. They don't want you there, so they pay you to leave. You get 180 coins");
                 break;
             }
             case 7: {
-                System.out.println("You arrive at a monastery. They are some cheap fuckers. You get 0 golden coins");
+                System.out.println("You arrive at a monastery and unfortunately they don't have any money. You get 0 golden coins");
                 break;
             }
             case 8: {
-                System.out.println("You get lost in dark cave, and somehow you lost 70 golden coins in the dark");
+                System.out.println("You get lost in a dark cave, and somehow you lost 70 golden coins in the dark");
                 break;
             }
             case 9: {
@@ -40,7 +40,7 @@ public class Board {
                 break;
             }
             case 10: {
-                System.out.println("You arrive at the horrifying Werewall!! You hastily run away in fright, and lose 80 golden coins in the process");
+                System.out.println("You arrive at the horrifying Werewall!!! You hastily run away in fright, and lose 80 golden coins in the process");
                 break;
             }
             case 11: {

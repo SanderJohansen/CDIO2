@@ -15,7 +15,7 @@ public class Intro_to_game {
         System.out.println("Welcome " + Player1 + " and " + Player2);
         while (0 == 0) {
             System.out.println("----------------------------------");
-            System.out.println("Do you want to start the game, or you want the rules of the game?");
+            System.out.println("Do you want to start the game, or do you want the rules of the game?");
             System.out.println("Type 1 to start, and type 2 for rules");
             int Start_function = scan.nextInt();
 
