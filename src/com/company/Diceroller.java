@@ -1,17 +1,18 @@
 package com.company;
 
 public class Diceroller {
-    Die obj = new Die();
+    Die Die1 = new Die();
+    Die Die2 = new Die();
 
     public Diceroller() {
-        obj.Roll();
     }
 
     public void Roll(){
-        obj.Roll();
+        Die1.Roll();
+        Die2.Roll();
     }
 
     public int face_sum(){
-        return obj.GetFacevalue();
+        return Die1.GetFacevalue() + Die2.GetFacevalue();
     }
 }
