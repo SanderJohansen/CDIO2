@@ -24,4 +24,8 @@ public class Wallet {
         }
         return a;
     }
+
+    public String Tostring(){
+        return Integer.toString(Wallet);
+    }
 }

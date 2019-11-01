@@ -20,4 +20,8 @@ public class Player {
     public String setwallet(int modifier){
         return Playerwallet.SetWallet(modifier);
     }
+
+    public String tostring(){
+        return playername + " wins with " + Playerwallet.Tostring() + " golden coins";
+    }
 }

@@ -42,10 +42,10 @@ public class Gameboard {
             System.out.println("----------------------------------------------");
         }
         if (Player1.getwallet() >= 3000){
-            System.out.println(Player1.getname() + " wins with, " + Player1.getwallet() + " points");
+            System.out.println(Player1.tostring());
         }
         if (Player2.getwallet() >= 3000){
-            System.out.println(Player2.getname() + " wins with, " + Player2.getwallet() + " points");
+            System.out.println(Player2.tostring());
         }
     }
 }
