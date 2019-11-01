@@ -2,8 +2,8 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Gameboard {
-    private Diceroller Rolled = new Diceroller();
+public class Gamelogic {
+    private Dicecup Rolled = new Dicecup();
     private Scanner scan = new Scanner(System.in);
     private Intro_to_game Rules = new Intro_to_game();
     private Board field = new Board();

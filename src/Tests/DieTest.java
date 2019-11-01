@@ -1,5 +1,6 @@
-package com.company;
+package Tests;
 
+import com.company.Die;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

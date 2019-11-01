@@ -1,10 +1,10 @@
 package com.company;
 
-public class Diceroller {
+public class Dicecup {
     private Die Die1 = new Die();
     private Die Die2 = new Die();
 
-    public Diceroller() {
+    public Dicecup() {
     }
 
     public void Roll(){
