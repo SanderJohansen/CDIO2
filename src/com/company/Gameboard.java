@@ -18,7 +18,7 @@ public class Gameboard {
         System.out.println("----------------------------------------------");
 
         int i = 0;
-        while (Player1.getwallet() <= 3000 && Player2.getwallet() <= 3000) {
+        while (Player1.getwallet() < 3000 && Player2.getwallet() < 3000) {
             if(i%2==0) {
                 System.out.println("It´s " + Player1.getname() +"´s turn, press enter to roll");
             }
@@ -41,10 +41,10 @@ public class Gameboard {
             i += field.turneffect(Rolled.face_sum());
             System.out.println("----------------------------------------------");
         }
-        if (Player1.getwallet() > 3000){
+        if (Player1.getwallet() >= 3000){
             System.out.println(Player1.getname() + " wins with, " + Player1.getwallet() + " points");
         }
-        if (Player2.getwallet() > 3000){
+        if (Player2.getwallet() >= 3000){
             System.out.println(Player2.getname() + " wins with, " + Player2.getwallet() + " points");
         }
     }
